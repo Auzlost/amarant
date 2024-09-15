@@ -1,0 +1,377 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid red;
+}
+
+.logo img {
+    height: 30px;
+    width: 200px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.75rem;
+    padding: 1rem;
+}
+
+.nav-links a:hover {
+    background-color: rgb(250, 0, 0);
+    border-radius: 5px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: whitesmoke;
+    padding: 1rem;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons a {
+    color: #000;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #ff0000;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 0;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+}
+
+.pre-order {
+    text-align: center;
+    background-color: #222;
+}
+
+.pre-order h2{
+    margin-bottom: 1.75rem;
+}
+
+.pre-order img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.pre-order:hover img {
+    transform: scale(1.1);
+}
+
+.links{
+    cursor: pointer;
+}
+
+.pre-order p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.0rem;
+}
+
+.pre-order button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pre-order button:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+}
+
+#guias {
+    text-align: center;
+    background-color: #222;
+}
+
+#guias h2{
+    margin-bottom: 1.75rem;
+}
+
+#guias img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+#guias:hover img {
+    transform: scale(1.1);
+}
+
+#guias p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.0rem;
+}
+
+#guias button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#guias button:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+}
+
+#rankings {
+    text-align: center;
+    background-color: #222;
+}
+
+#rankings h2{
+    margin-bottom: 1.75rem;
+}
+
+#rankings img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+#rankings:hover img {
+    transform: scale(1.1);
+}
+
+#rankings p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.0rem;
+}
+
+#rankings button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#rankings button:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+}
+
+#juegos-creados {
+    text-align: center;
+    background-color: #222;
+}
+
+#juegos-creados h2{
+    margin-bottom: 1.75rem;
+}
+
+#juegos-creados img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+#juegos-creados:hover img {
+    transform: scale(1.1);
+}
+
+#juegos-creados p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.0rem;
+}
+
+#juegos-creados button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#juegos-creados button:hover {
+    background-color: #e60000;
+    transform: scale(1.1);
+}
+
+#about-us {
+    text-align: center;
+    padding: 50px;
+    background-color: #1b1b1b;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+#about-us h2 {
+    color: #e63946;
+    font-size: 2.5em;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.team-member {
+    max-width: 250px;
+    text-align: center;
+}
+
+.team-photo {
+    width: 200px;
+    border-radius: 50%;
+    border: 3px solid #e63946;
+}
+
+.team-member h3 {
+    color: #e63946;
+    margin-top: 15px;
+}
+
+.team-member p {
+    color: white;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+    main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    section {
+      flex: 1;
+      margin: 0.5rem;
+    }
+
+    #about-us {
+      flex-basis: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex; 
+    }
+
+    .icons {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #about-us {
+        padding: 20px;
+    }
+
+    .team {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team img{
+      margin: 10px
+    }
+
+}
+

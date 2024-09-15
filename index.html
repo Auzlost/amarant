@@ -1,0 +1,122 @@
+<html>
+    <head>
+      <title>Amarant</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header>
+      <div class="logo">
+        <img src="./imagenes/amarant.png" alt="Logo">
+      </div>
+  
+      <ul class="nav-links">
+        <li>
+          <a href="#">Juegos</a>
+          <div class="dropdown">
+            <a href="#">Nuevos Lanzamientos</a>
+            <a href="#">Populares</a>
+            <a href="#">En Desarrollo</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Guías</a>
+          <div class="dropdown">
+            <a href="#">Walkthroughs</a>
+            <a href="#">Trophy Guides</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Store</a>
+          <div class="dropdown">
+            <a href="#">Pre-order</a>
+            <a href="#">Bundles</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Más</a>
+          <div class="dropdown">
+            <a href="#">Noticias</a>
+            <a href="#">Foro</a>
+            <a href="#">Eventos</a>
+          </div>
+        </li>
+      </ul>
+  
+      <div class="icons">
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </header>
+  
+    <main>
+        <section class="pre-order">
+            <h2>Pre-ordena tu aventura épica</h2>
+            <a class="links"><img src="./imagenes/twilight.png" alt="Twilight Age"></a>
+            <p>¡Embárcate en la aventura de tus sueños! Pre-ordena ahora y asegura tu lugar en el reino de Twilight Age. 
+            ¡Elige tu destino antes de que sea tarde!</p>
+            <button>Pre-ordenar Ahora</button>
+          </section>
+
+        <section id="guias">
+            <h2>Guías</h2>
+            <a class="links"><img src="./imagenes/gm7379.jpg" alt="Dark Souls trophy guide"></a>
+            <p>¡Prepárate para morir varias veces en Lordran mientras consigues todas las magias y armas legendarias! Consigue todos los trofeos con nosotros, para demostrar que eres el verdadero guerrero de la luz solar.</p> 
+            <p>¿Buscas otros desafios? Tenemos muchas mas guias esperandote aqui abajo.</p>
+            <button class="show-more" onclick="toggleGuide()">Ver más</button>
+        </section>
+  
+        <section id="rankings">
+            <h2>Rankings</h2>
+            <a class="links"><img src="./imagenes/ranking.png" alt="Dark Souls ranking"></a>
+            <p>Ven a descubrir nuestro ranking de los jefes más brutales de Dark Souls 3 que pusieron a prueba nuestras habilidades y paciencia.</p>
+            <p>Mira nuestras opiniones sobre juegos, personajes y mas, aqui abajo.</p>
+            <button class="show-more" onclick="toggleGuide()">Ver más</button>
+        </section>
+  
+        <section id="juegos-creados">
+            <h2>Dungeon Souls</h2>
+            <a class="links"><img src="./imagenes/image.png" alt="Dark Souls ranking"></a>
+            <p>Entra al calabozo y descubre todos los secretos que habitan en Dungeon Souls. Compralo ahora y preparate para luchar contra hordas de enemigos mientras intentas sobrevivir.</p>
+            <p>¿Buscas tu próxima aventura épica? Explora nuestros juegos y descubre mundos nuevos llenos de desafíos y sorpresas aqui abajo.</p>
+            <button class="show-more" onclick="toggleGuide()">Ver más</button>
+        </section>
+    
+        <section id="about-us">
+          <h2>Sobre Nosotros</h2>
+          <div class="team">
+              <div class="team-member">
+                  <img src="./imagenes/flavio.jpg" alt="Flavio Priano" class="team-photo">
+                  <h3>Flavio Priano</h3>
+                  <p><strong>Cofundador y Director de Audio</strong></p>
+                  <p>Encargado de liderar todo lo relacionado con el sonido, desde la composicion de la musica hasta el diseño de efectos de sonido.</p>
+              </div>
+  
+              <div class="team-member">
+                  <img src="./imagenes/alexander.jpg" alt="Alexander Di Leva" class="team-photo">
+                  <h3>Alexander Di Leva</h3>
+                  <p><strong>Cofundador y Director Artistico</strong></p>
+                  <p>Encargado de liderar la visión artística y estratégica de nuestros juegos. Su pasión por el diseño ha dado forma a cada uno de nuestros proyectos.</p>
+              </div>
+  
+              <div class="team-member">
+                  <img src="./imagenes/carlos.png" alt="Carlos Carazas" class="team-photo">
+                  <h3>Carlos Carazas</h3>
+                  <p><strong>Chofer</strong></p>
+                  <p>Es responsable de repartir la comida al equipo y de llevarnos a los eventos.</p>
+              </div>
+          </div>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2024 Amarant</p>
+    </footer>
+  </body>
+</html>
